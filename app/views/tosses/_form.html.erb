@@ -1,0 +1,20 @@
+<%= form_for @toss do |f| %>
+	<ul>
+		<%= @toss.errors.full_messages.each do  |error| %>
+			<li>
+				<%= error %>
+			</li>
+		<% end %>
+	</ul>
+	<p>
+		<%= f.label :team_a %><br />
+		<%= f.text_field :team_a %>
+	</p>
+	<p>
+		<%= f.label :team_b %><br />
+		<%= f.text_field :team_b %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

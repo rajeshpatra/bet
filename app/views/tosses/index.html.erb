@@ -1,0 +1,10 @@
+<h1>All Tosses</h1>
+
+<ul>
+	<%= @tosses.each do |toss| %>
+		<li>
+			<%= toss.team_a %>
+			<%= toss.team_b %>
+		</li>
+	<% end %>
+</ul>
