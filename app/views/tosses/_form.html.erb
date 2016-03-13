@@ -7,19 +7,22 @@
 		<% end %>
 	</ul>
 	<p>
-		<%= f.radio_button :team_a, 'team_a' %> 
-  		<%= f.label :team_a, 'Team A', :value => 'team_a' %>
-  		<%= f.number_field :team_a %>
- 	</p>
-	<p>
-		<%= f.radio_button :team_a, 'team_a' %>
-		<%= f.label :team_b, 'Team B', :value => 'team_b' %>
-		<%= f.number_field :team_b %>
+		<%= f.radio_button :toss, "1", id: 'teama' %> 
+		<%= f.label :team_a, "Team A" %>
+		<%= f.number_field :team_a, name: 'f1' %>
 	</p>
+	<p>
+		<%= f.radio_button :toss, "0", id: 'teamb' %> 
+		<%= f.label :team_b, "Team B" %>
+		<%= f.number_field :team_b, name: 'f2' %>
+	</p>
+	
+	
 	<p>
 		<%= f.submit 'Bet'%>
 	</p>
 <% end %>
 
 
- 
+
+
