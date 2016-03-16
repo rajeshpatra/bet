@@ -6,18 +6,15 @@
 			</li>
 		<% end %>
 	</ul>
-	<p>
-		<%= f.radio_button :toss, "1", id: 'teama' %> 
-		<%= f.label :team_a, "Team A" %>
-		<%= f.number_field :team_a, name: 'f1' %>
-	</p>
-	<p>
-		<%= f.radio_button :toss, "0", id: 'teamb' %> 
-		<%= f.label :team_b, "Team B" %>
-		<%= f.number_field :team_b, name: 'f2' %>
-	</p>
-	
-	
+<%= f.label :team_a , "Name:" %>
+<%= f.text_field :team_a %>
+
+
+<%= f.radio_button(:team_a, "team_a") %>
+<%= f.label(:team_a, "team_a") %>
+<br />
+<%= f.radio_button(:team_a, "team_b") %>
+<%= f.label(:team_b, "team_b") %>
 	<p>
 		<%= f.submit 'Bet'%>
 	</p>
